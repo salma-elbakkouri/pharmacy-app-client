@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+android:id="@+id/mytoolbar"
+android:elevation="4dp"
+android:layout_width="match_parent"
+android:layout_height="?attr/actionBarSize"
+    android:layout_marginBottom="20dp"
+android:background="#a4cb2e"
+app:popupTheme="@style/Theme.MyPharmacy.PopupOverlay"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+<ImageView
+    android:id="@+id/openDrawerBTN"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:tint="@color/white"
+    android:src="@drawable/ic_baseline_view_headline_24"
+    ></ImageView>
+
+    <TextView
+        android:id="@+id/toolbarText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="19sp"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:layout_gravity="center"
+        ></TextView>
+<ImageView
+    android:layout_marginRight="10dp"
+    android:layout_gravity="right"
+    android:tint="@color/white"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/ic_sharp_more_vert_24"
+    ></ImageView>
+</androidx.appcompat.widget.Toolbar>

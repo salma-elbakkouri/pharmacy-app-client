@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".PharmacienHomeActivity">
+
+    <include
+        layout="@layout/app_bar"></include>
+
+<!--    <LinearLayout-->
+<!--        android:paddingTop="10dp"-->
+<!--        android:paddingBottom="10dp"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:background="@color/white"-->
+<!--        android:backgroundTint="@color/white"-->
+<!--        android:orientation="horizontal">-->
+
+<!--        <ImageView-->
+<!--            android:id="@+id/menuBTN"-->
+<!--            android:layout_width="30dp"-->
+<!--            android:layout_height="30dp"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:layout_marginLeft="15dp"-->
+<!--            android:tint="#1E1E1E"-->
+<!--            app:srcCompat="@drawable/ic_baseline_notes_24"-->
+<!--            tools:ignore="VectorDrawableCompat" />-->
+
+
+<!--    </LinearLayout>-->
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="horizontal">-->
+
+
+<!--    </LinearLayout>-->
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="veuillez remplir le formulaire ci dessous"
+        android:textSize="14sp">
+
+    </TextView>
+
+    <EditText
+        android:id="@+id/nomPharmacie"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/input_style2"
+        android:drawableLeft="@drawable/ic_baseline_local_pharmacy_24"
+        android:drawablePadding="8dp"
+        android:hint="Nom de Pharmacie"
+        android:paddingLeft="15dp"
+        android:paddingTop="8dp"
+        android:paddingRight="15dp"
+        android:paddingBottom="8dp"
+        android:textSize="15sp"></EditText>
+
+    <EditText
+        android:id="@+id/numPortable"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/input_style2"
+        android:drawableLeft="@drawable/ic_baseline_phone_iphone_24"
+        android:drawablePadding="8dp"
+        android:hint="Num Tel Portable"
+        android:inputType="number|phone"
+        android:paddingLeft="15dp"
+        android:paddingTop="8dp"
+        android:paddingRight="15dp"
+        android:paddingBottom="8dp"
+        android:textSize="15sp"></EditText>
+
+    <EditText
+        android:id="@+id/numFix"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/input_style2"
+        android:drawableLeft="@drawable/ic_baseline_local_phone_24"
+        android:drawablePadding="8dp"
+        android:hint="Num Tel Fix"
+        android:inputType="number|phone"
+        android:paddingLeft="15dp"
+        android:paddingTop="8dp"
+        android:paddingRight="15dp"
+        android:paddingBottom="8dp"
+        android:textSize="15sp"></EditText>
+
+    <EditText
+        android:id="@+id/adresseMail"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/input_style2"
+        android:drawableLeft="@drawable/ic_baseline_mail_24"
+        android:drawablePadding="8dp"
+        android:hint="Adresse electronique"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="15dp"
+        android:paddingTop="8dp"
+        android:paddingRight="15dp"
+        android:paddingBottom="8dp"
+        android:textSize="15sp"></EditText>
+
+    <EditText
+        android:id="@+id/adressPharmacie"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/input_style2"
+        android:drawableLeft="@drawable/ic_baseline_location_on_24"
+        android:drawablePadding="8dp"
+        android:hint="Adresse de Pharmacie"
+        android:paddingLeft="15dp"
+        android:paddingTop="8dp"
+        android:paddingRight="15dp"
+        android:paddingBottom="8dp"
+        android:textSize="15sp"></EditText>
+
+    <TextView
+        android:id="@+id/mapAdress"
+        android:layout_width="0dp"
+        android:layout_height="15dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:visibility="gone"
+        android:textSize="15sp">
+
+    </TextView>
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="300dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="8dp"
+        android:textSize="15sp"
+        android:text="garde" />
+
+    <EditText
+        android:id="@+id/debutGarde"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/input_style2"
+        android:drawableLeft="@drawable/ic_baseline_date_range_24"
+        android:drawablePadding="8dp"
+        android:hint="date de debut"
+        android:inputType="date"
+        android:paddingLeft="15dp"
+        android:paddingTop="8dp"
+        android:paddingRight="15dp"
+        android:paddingBottom="8dp"
+        android:textSize="15sp"
+        android:visibility="gone"></EditText>
+
+    <EditText
+        android:id="@+id/finGarde"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/input_style2"
+        android:drawableLeft="@drawable/ic_baseline_date_range_24"
+        android:drawablePadding="8dp"
+        android:enabled="true"
+        android:hint="date de fin"
+        android:inputType="date"
+        android:paddingLeft="15dp"
+        android:paddingTop="8dp"
+        android:paddingRight="15dp"
+        android:paddingBottom="8dp"
+        android:textSize="15sp"
+        android:visibility="gone"></EditText>
+
+
+    <Button
+        android:id="@+id/actionBTN"
+        android:layout_width="294dp"
+        android:layout_height="51dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:backgroundTint="#a4cb2e"
+        android:fontFamily="@font/roboto_black"
+        android:text="valider"
+        android:textAllCaps="false"
+        android:textSize="17sp" />
+
+
+</LinearLayout>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/pharmacienBTN"
+        android:layout_width="310dp"
+        android:layout_height="60dp"
+        android:fontFamily="@font/roboto_black"
+        android:text="Je Suis Pharmacien"
+        android:textAllCaps="false"
+        android:textSize="14sp"
+        app:backgroundTint="#a4cb2e"
+        app:layout_constraintBottom_toTopOf="@+id/aboutBTN"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/utilisateurBTN" />
+
+    <Button
+        android:id="@+id/utilisateurBTN"
+        android:layout_width="310dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="200dp"
+        android:fontFamily="@font/roboto_black"
+        android:text="Je Veux Consulter Les Pharmacies"
+        android:textAllCaps="false"
+        android:textSize="14sp"
+        app:backgroundTint="#39AEA9"
+        app:layout_constraintBottom_toTopOf="@+id/pharmacienBTN"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <Button
+        android:id="@+id/aboutBTN"
+        android:layout_width="310dp"
+        android:layout_height="60dp"
+        android:fontFamily="@font/roboto_black"
+        android:text="Savoir Plus Sur myPharmacy"
+        android:textAllCaps="false"
+        android:textColor="#616161"
+        android:textSize="14sp"
+        app:backgroundTint="#EEFAF3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pharmacienBTN" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="347dp"
+        android:layout_height="64dp"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:text="vos opinions et suggestions sont les bienvenus pour ameliorer notre application"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/aboutBTN"
+        app:lineHeight="20dp" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="247dp"
+        android:layout_height="166dp"
+        app:layout_constraintBottom_toTopOf="@+id/utilisateurBTN"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.405"
+        app:srcCompat="@drawable/logo_app" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

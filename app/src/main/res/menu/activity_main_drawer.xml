@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_profile"
+            android:iconTint="@color/black"
+            android:icon="@drawable/ic_profile"
+            android:title="Profil" />
+        <item
+            android:id="@+id/nav_pharmacies"
+            android:iconTint="@color/black"
+            android:icon="@drawable/ic_baseline_local_pharmacy_24"
+            android:title="Pharmacies" />
+        <item
+            android:iconTint="@color/black"
+            android:id="@+id/nav_changeMail"
+            android:icon="@drawable/ic_sharp_privacy_tip_24"
+            android:title="Changer l'adresse email" />
+
+    </group>
+
+    <item android:title="communiquer">
+        <menu>
+            <item
+            android:iconTint="@color/black"
+            android:id="@+id/nav_share"
+            android:icon="@drawable/ic_baseline_share_24"
+            android:title="Partager" />
+            <item
+                android:iconTint="@color/black"
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/ic_baseline_rotate_left_24"
+                android:title="Se deconnecter" />
+        </menu>
+    </item>
+
+</menu>
